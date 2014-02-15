@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip" >
+   
+   <TextView
+      android:id="@+id/hintText"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="3dip"
+      android:padding="5dip"
+      android:paddingLeft="10dip"
+      android:textColor="#FFFF00"
+      android:singleLine="true"
+      android:ellipsize="marquee"
+      android:marqueeRepeatLimit="marquee_forever"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:visibility="gone"
+      android:layout_weight="0.0"/>
+
+   <ListView
+       android:id="@+id/list_menu"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="5dip"
+       android:layout_weight="1.0"
+       android:clickable="true"
+       android:divider="#f0808080"
+       android:dividerHeight="1dp"
+       android:focusable="true"
+       android:isScrollContainer="false"
+       android:longClickable="true" />
+
+</LinearLayout>

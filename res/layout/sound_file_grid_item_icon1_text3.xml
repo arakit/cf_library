@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal|center_vertical"
+    android:minHeight="65dp"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/none_picture_frame" >
+
+        <LinearLayout
+            android:id="@+id/design_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/noise_red_tile"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/icon_1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="0"
+                android:clickable="false"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/sym_def_app_icon" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_1"
+                    style="@style/FileGridItemStyle.TextView.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:lines="2"
+                    android:scrollHorizontally="true"
+                    android:text="Medium Text" />
+
+                <TextView
+                    android:id="@+id/text_2"
+                    style="@style/FileGridItemStyle.TextView.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:maxLines="1"
+                    android:text="Small Text" />
+
+                <TextView
+                    android:id="@+id/text_3"
+                    style="@style/FileGridItemStyle.TextView.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="Small Text" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

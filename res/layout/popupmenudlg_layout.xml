@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/hintText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_weight="0.0"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="5dip"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textColor="#FFFF00"
+            android:visibility="gone" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1.0" >
+
+            <ListView
+                android:id="@+id/list_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:divider="#f0808080"
+                android:dividerHeight="1dp"
+                android:focusable="true"
+                android:isScrollContainer="false" >
+            </ListView>
+
+
+
+            <FrameLayout
+                android:id="@+id/empty_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/empty_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="empty"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#202020" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

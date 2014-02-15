@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" android:minHeight="65dp" android:layout_height="wrap_content">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/icon_1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/sym_def_app_icon" android:clickable="false"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" android:clickable="false">
+
+
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" android:clickable="false"/>
+
+
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" android:clickable="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

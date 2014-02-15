@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.crudefox.library"
+    android:versionCode="1"
+    android:versionName="1.0.0" 
+    android:installLocation="auto"
+    >
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+    
+
+   	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   	<!--uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /-->
+   	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+   	<!--uses-permission android:name="android.permission.VIBRATE" /-->
+   	<!--uses-permission android:name="android.permission.INTERNET" />-->
+   	<!--uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+   	
+   	
+   	<uses-feature android:name="android.hardware.microphone" android:required="true" />
+   	
+   	<!-- 
+   	<uses-feature android:name="android.hardware.camera" android:required="true" />	
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+	<uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+	-->
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+        
+    </application>
+
+</manifest>
